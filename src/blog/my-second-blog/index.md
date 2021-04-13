@@ -1,5 +1,6 @@
 ---
 title: My Second blog
+postDate: November 20, 2020
 layout: post.njk
 featuredImage: ./islands.jpg
 pageTitle: This is my other Title

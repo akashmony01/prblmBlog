@@ -1,69 +1,95 @@
 ---
-title: My First blog
+title: Officia esse dignissimos eum est et neque. Omnis at consequatur et vitae
+postDate: November 20, 2020
 layout: post.njk
 featuredImage: ./doggo.jpg
 pageTitle: This is my other Title
 tags: ["post"]
 ---
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dictum felis eu pede mollis pretium. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-
-<!-- excerpt -->
-
-```js
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-
-```python
-s = "Python syntax highlighting"
-print s
-```
-
-```
-No language indicated, so no syntax highlighting.
-But let's throw in a <b>tag</b>.
-```
-
-| Tables        |      Are      |  Cool |
-| ------------- | :-----------: | ----: |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      |   centered    |   $12 |
-| zebra stripes |   are neat    |    $1 |
-
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
-
-Quote break.
-
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can _put_ **Markdown** into a blockquote.
-
-Three or more...
-
----
-
-Hyphens
-
----
-
-Asterisks
-
----
-
-Underscores
-
-Aenean commodo ligula eget dolor. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Integer tincidunt.
-
-Cras dapibus. Aenean vulputate eleifend tellus. Vivamus elementum semper nisi. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Donec vitae sapien ut libero venenatis faucibus. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
-
-Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-
-Maecenas nec odio et ante tincidunt tempus.
-
-### h3
-
-## h2
-
-# h1
-
-#### h4
+<figure class="mb-6">
+    <img class="w-full" src="/assets/images/singlePost/post1img1.jpg" alt="">
+</figure>
+<ol class="pl-10 mb-6 list-decimal">
+    <li>
+        Nisi necessitatibus qui atque voluptatum
+    </li>
+    <li>
+        Earum ipsum adipisci esse ratione
+    </li>
+    <li>
+        Aut reiciendis
+    </li>
+    <li>
+        Eos aut sit qui
+    </li>
+    <li>
+        Asperiores
+    </li>
+    <li>
+        Magnam mollitia quia ea molestiae
+    </li>
+</ol>
+<figure class="mb-6">
+    <img class="w-full" src="/assets/images/singlePost/post1img2.jpg" alt="">
+</figure>
+<figure class="mb-6">
+    <img class="w-full" src="/assets/images/singlePost/post1img3.jpg" alt="">
+</figure>
+<p class="font-gtWalsheimMedium mb-6">
+    Amet cupiditate hic rerum aliquid quidem quas quo. Dignissimos 
+    quia vitae sed voluptatum et. Ut recusandae commodi ullam
+</p>
+<ol class="pl-10 mb-6 list-decimal">
+    <li>
+        Libero dolor cum aut cum
+    </li>
+    <li>
+        In
+    </li>
+    <li>
+        Placeat
+    </li>
+    <li>
+        Accusantium amet qui eos aut
+    </li>
+</ol>
+<h3 class="text-black text-3xl mb-4 font-gtWalsheimMedium opacity-90">
+    Accusamus sapiente a atque modi
+</h3>
+<figure class="mb-6">
+    <img class="w-full" src="/assets/images/singlePost/post1img4.jpg" alt="">
+</figure>
+<h3 class="text-black text-3xl mb-4 font-gtWalsheimMedium opacity-90">
+    Adipisci corrupti ratione rerum rerum vel ea nulla consequatur. 
+    Ab perspiciatis quis harum non porro aliquam vitae
+</h3>
+<ol class="pl-10 mb-6 list-decimal">
+    <li>
+        Alias omnis soluta ea enim omnis quod quisquam
+    </li>
+    <li>
+        Non cum est ut sed
+    </li>
+    <li>
+        Porro atque omnis consequatur et eveniet sed
+    </li>
+    <li>
+        Sit illum et consequatur a
+    </li>
+    <li>
+        Repellat eum alias rerum vel qui eos
+    </li>
+    <li>
+        Dolorem debitis non sit voluptas
+    </li>
+    <li>
+        Accusamus vitae et cum amet aut
+    </li>
+    <li>
+        Neque ab totam
+    </li>
+    <li>
+        Enim occaecati
+    </li>
+</ol>

@@ -6,17 +6,17 @@
         <div class="flex items-center justify-end flex-wrap">
             <ul id="menu" class="menu">
                 <li class="menuList">
-                    <a href="/taxExplain" class="flex items-center lg:p-4 text-xl md:text-lg text-white font-gtWalsheimMedium hover:text-secondery duration-300">
+                    <a href="/taxExplain" class="{{ 'text-secondery' if '/taxExplain' in page.url }} flex items-center lg:p-4 text-xl md:text-lg text-white font-gtWalsheimMedium hover:text-secondery duration-300">
                         R&D Tax Explained
                     </a>
                 </li>
                 <li class="menuList">
-                    <a href="/taxShow" class="flex items-center lg:p-4 text-xl md:text-lg text-white font-gtWalsheimMedium hover:text-secondery duration-300">
+                    <a href="/taxShow" class="{{ 'text-secondery' if '/taxShow' in page.url }} flex items-center lg:p-4 text-xl md:text-lg text-white font-gtWalsheimMedium hover:text-secondery duration-300">
                         R&D Tax Show                        
                     </a>
                 </li>
                 <li class="menuList relative submenuContainer">
-                    <a href="/ourProcess" class="subMenuBtn flex items-center p-1 lg:p-4 text-xl md:text-lg text-white font-gtWalsheimMedium hover:text-secondery duration-300">
+                    <a href="/ourProcess" class="subMenuBtn {{ 'text-secondery' if '/ourProcess' in page.url }} flex items-center p-1 lg:p-4 text-xl md:text-lg text-white font-gtWalsheimMedium hover:text-secondery duration-300">
                         <span class="block mr-1">Working with accountants</span>
                         <svg aria-colspan="w-6" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -24,19 +24,19 @@
                     </a>
                     <ul class="subMenu hidden duration-300 absolute bg-primary text-white text-lg font-gtWalsheimMedium p-4 bottom-0 left-2/4 w-full transform translate-y-full -translate-x-2/4">
                         <li>
-                            <a href="/whyUs" class="block hover:text-secondery duration-300 py-2">
+                            <a href="/whyUs" class="block {{ 'text-secondery' if '/whyUs' in page.url }} hover:text-secondery duration-300 py-2">
                                 Why choose GrowthPad?
                             </a>
                         </li>
                         <li>
-                            <a href="/faq" class="block hover:text-secondery duration-300 py-2">
+                            <a href="/faq" class="block {{ 'text-secondery' if '/faq' in page.url }} hover:text-secondery duration-300 py-2">
                                 Frequently Asked Questions
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="menuList">
-                    <a href="/blog" class="flex items-center p-1 lg:p-4 text-xl md:text-lg text-white font-gtWalsheimMedium hover:text-secondery duration-300">
+                    <a href="/blog" class="flex {{ 'text-secondery' if '/blog' in page.url }} items-center p-1 lg:p-4 text-xl md:text-lg text-white font-gtWalsheimMedium hover:text-secondery duration-300">
                         Blog
                     </a>
                 </li>

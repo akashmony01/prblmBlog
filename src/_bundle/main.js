@@ -1,6 +1,5 @@
 import "./main.pcss";
 
-
 // onscroll add sticky class
 // ======================================================
 $(window).scroll(function() {    
