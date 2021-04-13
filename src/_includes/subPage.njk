@@ -1,0 +1,84 @@
+---
+layout: layout.njk
+includeWhySection: true
+---
+
+<!-- hero section -->
+<section class="pt-24 relative overflow-x-hidden bg-cover bg-no-repeat bg-center" style="background-image: url('/assets/images/taxExplain/hero.jpg');">
+    <!-- overlay -->
+    <div class="bg-primary absolute top-0 left-0 right-0 bottom-0 z-1 opacity-95"></div>
+    <div class="container max-w-screen-xl mx-auto pt-10 lg:pt-20 xl:pt-40 pb-10 md:pb-20 lg:pb-28 px-4 md:px-9 sticky z-10 text-white text-center">
+        {% if heroHeader %}
+        <h1 class="text-5xl leading-normal mb-4 font-gtWalsheimBold">
+            {{ heroHeader }}
+        </h1>
+        {% endif %}
+        {% if heroDesc %}
+        <p class="text-lg">
+            {{ heroDesc }}
+        </p>
+        {% endif %}
+    </div>
+    <div class="text-white absolute bottom-0 left-2/4 transform -translate-x-2/4 flex flex-col justify-end" style="width: 158%; height: 350px;">
+        <svg fill="#fff" class="w-full h-1/4 md:h-2/4 lg:h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <path class="elementor-shape-fill" d="M500,97C126.7,96.3,0.8,19.8,0,0v100l1000,0V1C1000,19.4,873.3,97.8,500,97z"></path>
+        </svg>
+    </div>
+</section>
+
+{{content | safe}}
+
+{% if includeWhySection %}
+<!-- Why choose GrowthPad -->
+<section>
+    <div class="container max-w-screen-lg mx-auto px-4 py-14 flex flex-col-reverse md:flex-row items-center md:items-start justify-between">
+        <article class="text-lg text-textColor leading-relaxed md:w-7/12">
+            <h4 class="mb-8 text-secondery text-3xl font-gtWalsheimBold leading-normal">
+                Why choose GrowthPad?
+            </h4>
+            <p class="mb-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur 
+                ornare at viverra dictum commodo sapien maecenas amet. 
+                Eget non tincidunt enim nec lectus nunc sed. Vitae nulla gravida in 
+                felis eget in. Ut sed arcu, vitae velit vulputate proin nunc.
+            </p>
+            <a href="" class="inline-block border text-base border-textColor py-2 px-10 rounded-lg">
+                <span class="flex items-center">
+                    Read more about us
+                    <svg class="w-5 ml-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </span>
+            </a>
+        </article>
+        <figure class="md:w-5/12 mb-14 md:mb-0">
+            <img class="w-11/12 md:w-8/12 mx-auto md:mr-0" src="/assets/images/taxShow/why.png" alt="why">
+        </figure>
+    </div>
+    <div class="container max-w-screen-lg mx-auto px-4 py-14 flex flex-col md:flex-row items-center md:items-start justify-between">
+        <figure class="md:w-5/12 mb-14 md:mb-0">
+            <img class="w-11/12 md:w-8/12 mx-auto md:ml-0" src="/assets/images/taxShow/faq.png" alt="why">
+        </figure>
+        <article class="text-lg text-textColor leading-relaxed md:w-7/12">
+            <h4 class="mb-8 text-secondery text-3xl font-gtWalsheimBold leading-normal">
+                You have Questions? We have answers.
+            </h4>
+            <p class="mb-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur 
+                ornare at viverra dictum commodo sapien maecenas amet. Eget 
+                non tincidunt enim nec lectus nunc sed. 
+                Vitae nulla gravida in felis eget in. 
+                Ut sed arcu, vitae velit vulputate proin nunc.
+            </p>
+            <a href="" class="inline-block border text-base border-textColor py-2 px-10 rounded-lg">
+                <span class="flex items-center">
+                    Read our FAQ's
+                    <svg class="w-5 ml-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </span>
+            </a>
+        </article>
+    </div>
+</section>
+{% endif %}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {# importing styles #}
+  <link rel="stylesheet" href="/assets/vendorStyles/owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="/assets/vendorStyles/owl/owl.theme.default.css">
+  <link rel="stylesheet" href="/assets/main.bundle.css">
+  <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+
+  {# importing scripts #}
+  <script src="/assets/vendorScripts/jquery.min.js"></script>
+  <script src="/assets/vendorScripts/owl/owl.carousel.min.js"></script>
+  <script src="/assets/main.bundle.js" defer></script>
+
+  <title>{{ title }}</title>
+  {% block head %}{% endblock %}
+</head>
+
+<body class="font-gtWalsheimRegular">
+  {% include 'header.njk' %}
+  <main class="">
+    {{ content | safe }}
+  </main>
+  {% include 'footer.njk' %}
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base{
+    /* importing fonts */
+    /*@font-face {
+        font-family: gt-walsheim-light;
+        src: url('fonts/gt-walsheim/gt-walsheim-light-web.ttf');
+    }
+
+    @font-face {
+        font-family: gt-walsheim-regular;
+        src: url('fonts/gt-walsheim/gt-walsheim-web.ttf');
+    }
+
+    @font-face {
+        font-family: gt-walsheim-medium;
+        src: url('fonts/gt-walsheim/gt-walsheim-medium-web.ttf');
+    }
+
+    @font-face {
+        font-family: gt-walsheim-bold;
+        src: url('fonts/gt-walsheim/gt-walsheim-bold-web.ttf');
+    }*/
+
+    /* basic styles */
+    .menu{
+        @apply fixed overflow-hidden md:overflow-visible bg-primary top-2/4 left-2/4
+        w-0 h-0 transform -translate-x-2/4 -translate-y-2/4 
+        flex flex-col items-center justify-center lg:flex-row lg:static 
+        lg:bg-transparent lg:w-auto lg:h-auto lg:translate-x-0 
+        lg:translate-y-0 duration-300 z-40;
+    }
+
+    .menuList{
+        @apply opacity-0 duration-300 lg:opacity-100;
+    }
+
+    .menuActive{
+        @apply w-screen h-screen p-4;
+    }
+
+    .liActive{
+        opacity: 100;
+    }
+
+    .menuOpen,
+    .menuClose{
+        @apply block absolute opacity-100 w-10 transform duration-300
+        top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4;
+    }
+
+    .menuClose{
+        @apply opacity-0;
+    }
+
+    .menuOpenActive{
+        @apply rotate-180 opacity-0;
+    }
+
+    .menuCloseActive{
+        @apply rotate-180 opacity-100;
+    }
+
+    .bgCustom{
+        background-image: linear-gradient(130deg, #131E4C 0%, #27346A 100%);
+    }
+
+    .bgCustom2 *,
+    .bgCustom3 *{
+        position: sticky;
+        z-index: 2;
+    }
+
+    .bgCustom2::after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        background-image: linear-gradient(220deg, #111E49 42%, #10256B 100%);
+        opacity: .95;
+        z-index: 1;
+    }
+    
+    .bgCustom3::after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        background-color: #D72B27;
+        opacity: .85;
+        z-index: 1;
+    }
+
+    .shakeAnim:hover{
+        animation-name: shakeAnim;
+        animation-duration: .75s;
+    }
+
+    @keyframes shakeAnim {
+        20%   {
+            transform: translateX(-10px);
+        }
+        40%  {
+            transform: translateX(10px);
+        }
+        60%  {
+            transform: translateX(-5px);
+        }
+        80%  {
+            transform: translateX(5px);
+        }
+        100%  {
+            transform: translateX(0);
+        }
+    }
+
+    .shakeRotate:hover{
+        animation-name: shakeRotate;
+        animation-duration: .5s;
+    }
+
+    @keyframes shakeRotate {
+        20%   {
+            transform: rotate(5deg);
+        }
+        40%  {
+            transform: rotate(-5deg);
+        }
+        60%  {
+            transform: rotate(3deg);
+        }
+        80%  {
+            transform: rotate(-3deg);
+        }
+        100%  {
+            transform: rotate(0);
+        }
+    }
+
+    .owl-carousel .owl-dots{
+        margin-top: 50px!important;
+    }
+
+    .owl-carousel .owl-dots button{
+        outline: none;
+    }
+
+    .heroSlider.owl-carousel .owl-dots button span{
+        width: 25px!important;
+        height: 10px!important;
+    }
+
+}
